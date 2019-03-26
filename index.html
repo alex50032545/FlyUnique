@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<title>FlyUnique - Destinos</title>
+<link rel="stylesheet" href="styles.css">
+
+<link href="PgwSlider/pgwslider.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<script src="PgwSlider/pgwslider.js"></script>
+
+<link rel="stylesheet" href="zoom/css/dg-picture-zoom.css" type="text/css" />
+<script type="text/javascript" src="zoom/js/external/mootools-1.2.4-core-yc.js"></script>
+<script type="text/javascript" src="zoom/js/external/mootools-more.js"></script>
+<script type="text/javascript" src="zoom/js/dg-picture-zoom.js"></script>
+<script type="text/javascript" src="zoom/js/dg-picture-zoom-autoload.js"></script>
+<script src="script.js"></script>
+<link rel="stylesheet" href="styles.css">
+
+<link type="text/css" rel="stylesheet" href="js/lightslider.css" />
+<script src="js/lightslider.js"></script>
+	<noscript>
+		<style type="text/css">
+			#main {display:none;}
+		</style>
+		<div class="noscriptmsg"  >
+			Por favor active o javascript.
+		</div>
+	</noscript>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('.pgwSlider').pgwSlider({
+		autoSlide:false,
+    displayList:false,
+    displayControls: true
+	});
+
+	$("#lightSlider").lightSlider({
+		item: 5,
+		slideMove: 5,
+		controls: false,
+		responsive : [
+            {
+                breakpoint:800,
+                settings: {
+                    item:4,
+                    slideMove:4,
+					slideMargin:10
+                  }
+            },
+            {
+                breakpoint:718,
+                settings: {
+                    item:3,
+                    slideMove:3
+                  }
+            },
+			{
+                breakpoint:530,
+                settings: {
+                    item:2,
+                    slideMove:2,
+					slideMargin:10
+                  }
+            }
+        ]
+	});
+});
+
+</script>
+</head>
+
+<body>
+
+<div class='navbar'>
+<img src="logo.png">
+    <div class="test">
+         <a href="index.html">Home</a>
+         <a href="destinos.html">Destinos</a>
+         <div class="subnav">
+         <button class="subnavbtn">Circuitos <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+             <a href="circuitospre.html">Circuitos Prefeitos</a>
+             <a href="circuitospers.html">Circuitos Personalizados</a>
+            </div>
+         </div>
+         <a href="promocoes.html">Promoções</a>
+         <a href="contactos.html">Consulte-nos</a>
+       </div>
+
+</div>
+<div id="main">
+
+  <ul class="pgwSlider">
+      <li><img src="bali.png" alt="Paris, France" data-description="Eiffel Tower and Champ de Mars"></li>
+      <li><img src="russiab.png" alt="Montréal, QC, Canada" data-description="Eiffel Tower and Champ de Mars"></li>
+  </ul>
+
+
+<div class="info">
+  <div class="container">
+    <img src="calc.png">
+    <h4>Orçamentos Online</h4>
+    <p>A FlyUnique dá a oportunidade de escolher a sua viagem,
+calcular o preço final e criar os seus próprios orçamentos
+á medida.</p>
+  </div>
+  <div class="container">
+    <img src="pres.png">
+    <h4>Ofertas Fly Unique</h4>
+    <p>Encontre as nossas melhores oportunidades em viagens culturais e escapadas.</p>
+  </div>
+  <div class="container">
+    <img src="mundo.png">
+    <h4>Top Destinos</h4>
+    <p>Saiba qual os destinos mais visitados pelos nossos clientes.</p>
+  </div>
+</div>
+
+</div>
+
+
+</body>
+</html>
