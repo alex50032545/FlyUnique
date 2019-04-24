@@ -157,7 +157,7 @@ background-color: white;
 }
 
 .prefeitotabela{
-  margin: 0 20px 0 20px;
+  margin: 0 20px 40px 20px;
   padding:20px;
   float:left;
 }
@@ -188,4 +188,40 @@ background-color: white;
 }
 .prefeitotabela table tr:first-child {
   background-color: #2d78beb3;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 110%;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip img{
+  width:15px;
 }
